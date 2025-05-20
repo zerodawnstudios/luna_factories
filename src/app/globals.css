@@ -10,6 +10,7 @@
   --primary: #ffc518;
   --secondary: #110e00;
   --grid-cols-auto-fit: repeat(auto-fit, minmax(200px, 1fr));
+  --f-grid-cols-auto-fit: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 @theme inline {
@@ -24,7 +25,11 @@
 .grid-auto-fit {
   display: grid;
   grid-template-columns: var(--grid-cols-auto-fit);
-  gap: 1rem; /* optional */
+}
+
+.f-grid-auto-fit {
+  display: grid;
+  grid-template-columns: var(--f-grid-cols-auto-fit);
 }
 
 body {
